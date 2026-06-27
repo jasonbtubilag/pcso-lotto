@@ -695,9 +695,9 @@ def render_trackrecord(log, back):
                      f'<td><b style="color:{"#fde047" if best>=thr else "#e2e8f0"}">{best}/{P}</b></td>'
                      f'<td>{prize_cell}</td>'
                      f'<td class="tract">{act}</td><td>{chips}</td></tr>')
-        live = (head + '<table class="trtable"><thead><tr><th>Date</th><th>Game</th>'
+        live = (head + '<div class="trscroll"><table class="trtable"><thead><tr><th>Date</th><th>Game</th>'
                 '<th>Best</th><th>Prize</th><th>Actual</th><th>Per-combo score</th></tr></thead><tbody>'
-                + rows + '</tbody></table>')
+                + rows + '</tbody></table></div>')
     else:
         live = ('<div class="pnone">No predictions have been scored yet. The first scores appear the '
                 'night a predicted draw takes place (10 PM run).</div>')
@@ -715,11 +715,11 @@ def render_trackrecord(log, back):
             f'<td>{s["tier3_draws"]}</td><td>{s["tier4_draws"]}</td>'
             f'<td>{s["tier5_draws"]}</td><td>{s["tier6_draws"]}</td>'
             f'<td>{s["baseline_tier3_draws_5combos"]:.1f}</td></tr>')
-    lotto_table = ('<table class="trtable"><thead><tr><th>Game</th><th>Draws tested</th>'
+    lotto_table = ('<div class="trscroll"><table class="trtable"><thead><tr><th>Game</th><th>Draws tested</th>'
                    '<th>Avg best match</th><th>Random avg/combo</th>'
                    '<th>3/6</th><th>4/6</th><th>5/6</th><th>6/6</th>'
                    '<th>Exp. 3+ (random)</th></tr></thead><tbody>'
-                   + lotto_rows + '</tbody></table>') if lotto_rows else ''
+                   + lotto_rows + '</tbody></table></div>') if lotto_rows else ''
 
     # ---- backtest: positional-digit games ----
     digit_rows = ""
@@ -739,10 +739,10 @@ def render_trackrecord(log, back):
                    '<div class="psub">Headline metric: avg count of exact-position digit matches '
                    '(random expectation = positions ÷ 10). Tier columns count draws whose best combo '
                    'matched ≥k digits in exact order from an end (a paying tier).</div>'
-                   '<table class="trtable"><thead><tr><th>Game</th><th>Pos.</th><th>Draws tested</th>'
+                   '<div class="trscroll"><table class="trtable"><thead><tr><th>Game</th><th>Pos.</th><th>Draws tested</th>'
                    '<th>Avg best pos-match</th><th>Random avg/combo</th>'
                    '<th>2+</th><th>3+</th><th>4+</th><th>5+</th><th>6</th></tr></thead><tbody>'
-                   + digit_rows + '</tbody></table>') if digit_rows else ''
+                   + digit_rows + '</tbody></table></div>') if digit_rows else ''
 
     backtest_html = (
         '<h3 style="margin-top:18px;">📊 Backtest — strategy vs. random baseline</h3>'
@@ -795,6 +795,21 @@ CSS = '''  .predict{background:linear-gradient(135deg,#1e1b4b,#312e81);border-ra
   .trtable td{padding:6px 8px;border-bottom:1px solid rgba(255,255,255,.06);}
   .tract{font-family:monospace;color:#a7f3d0;}
   .trchip{display:inline-block;border:1px solid;border-radius:20px;padding:1px 8px;font-size:.68rem;margin:1px;color:#cbd5e1;}
+  .trscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  @media (max-width:640px){
+    .predict{padding:14px 14px;}
+    .pcard{padding:14px 16px;}
+    .pcard h3{font-size:1rem;}
+    .prow{flex-direction:column;align-items:stretch;gap:8px;padding:12px 2px;}
+    .plabel{flex:0 0 auto;}
+    .pballs{flex-wrap:wrap;}
+    .pmatch,.pmeta,.pprize{margin-left:0;align-self:flex-start;}
+    .pball{width:32px;height:32px;font-size:.8rem;}
+    .pjackpot{font-size:.84rem;}
+    .trbox{flex:1 1 calc(50% - 6px);min-width:0;}
+    .trtable{font-size:.72rem;white-space:nowrap;}
+    .trtable th,.trtable td{padding:6px 7px;}
+  }
 '''
 
 

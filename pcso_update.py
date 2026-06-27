@@ -461,6 +461,22 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   .footer{color:var(--muted);font-size:.8rem;margin-top:16px;line-height:1.6;}
   .status{font-size:.82rem;color:var(--muted);margin-left:auto;}
   .win{color:#34d399;font-weight:600;}
+  @media (max-width:640px){
+    header{padding:18px 16px;}
+    header h1{font-size:1.3rem;}
+    header p{font-size:.78rem;}
+    .wrap{padding:14px;}
+    .today,.sched,.stat{padding:14px;}
+    .today h2{font-size:1.05rem;}
+    .stats{gap:8px;}
+    .stat{flex:1 1 calc(50% - 6px);min-width:0;}
+    .stat .num{font-size:1.25rem;}
+    .controls{gap:8px;}
+    select,input,button{width:100%;flex:1 1 100%;min-width:0;}
+    .status{margin-left:0;width:100%;}
+    table.main th,table.main td{padding:8px 10px;font-size:.8rem;}
+    .footer{font-size:.74rem;}
+  }
 </style>
 </head>
 <body>

@@ -191,6 +191,63 @@
       },
       "jackpot": "128,000,000.00",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-06-28",
+      "generated": "2026-06-28T00:29:42",
+      "history_size": 1502,
+      "combos": {
+        "Frequency Leaders": [
+          2,
+          6,
+          14,
+          19,
+          22,
+          45
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          6,
+          14,
+          19,
+          34,
+          49
+        ],
+        "Weighted Pick 1": [
+          5,
+          17,
+          24,
+          33,
+          40,
+          43
+        ],
+        "Weighted Pick 2": [
+          3,
+          10,
+          30,
+          33,
+          38,
+          55
+        ],
+        "Weighted Pick 3": [
+          5,
+          10,
+          15,
+          28,
+          50,
+          51
+        ],
+        "Fibonacci (control)": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Super Lotto 6/49": [
@@ -385,6 +442,63 @@
       },
       "jackpot": "42,703,181.17",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-06-28",
+      "generated": "2026-06-28T00:29:42",
+      "history_size": 1561,
+      "combos": {
+        "Frequency Leaders": [
+          3,
+          16,
+          19,
+          29,
+          30,
+          41
+        ],
+        "Hot + Overdue Balance": [
+          3,
+          19,
+          23,
+          29,
+          30,
+          34
+        ],
+        "Weighted Pick 1": [
+          6,
+          10,
+          35,
+          36,
+          37,
+          48
+        ],
+        "Weighted Pick 2": [
+          16,
+          17,
+          23,
+          32,
+          37,
+          49
+        ],
+        "Weighted Pick 3": [
+          8,
+          12,
+          16,
+          21,
+          28,
+          49
+        ],
+        "Fibonacci (control)": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Grand Lotto 6/55": [
