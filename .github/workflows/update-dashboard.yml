@@ -1,0 +1,49 @@
+name: Update PCSO dashboard
+
+# Runs the scraper + predictor on a schedule, commits the regenerated
+# data/HTML back to the repo, and GitHub Pages serves it automatically.
+
+on:
+  schedule:
+    # 15:00 UTC = 11:00 PM Manila (UTC+8), after the 9:00 PM draw.
+    - cron: "0 15 * * *"
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write          # allow the job to push the updated files
+
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape results and rebuild dashboard
+        run: |
+          python pcso_update.py
+          python pcso_predict.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "pcso-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update PCSO results ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
