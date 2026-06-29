@@ -66,7 +66,7 @@
     "type": "lotto",
     "N": 55,
     "tested_draws": 300,
-    "avg_best_matches": 1.5733333333333333,
+    "avg_best_matches": 1.57,
     "tier3_draws": 22,
     "tier4_draws": 1,
     "tier5_draws": 0,
@@ -81,7 +81,7 @@
         "draws": 300
       },
       "Hot + Overdue Balance": {
-        "avg_matches": 0.6466666666666666,
+        "avg_matches": 0.6433333333333333,
         "t3": 3,
         "t4": 0,
         "t5": 0,
@@ -89,7 +89,7 @@
         "draws": 300
       },
       "Weighted Pick 1": {
-        "avg_matches": 0.6266666666666667,
+        "avg_matches": 0.6233333333333333,
         "t3": 7,
         "t4": 1,
         "t5": 0,
@@ -105,7 +105,7 @@
         "draws": 300
       },
       "Weighted Pick 3": {
-        "avg_matches": 0.6266666666666667,
+        "avg_matches": 0.63,
         "t3": 3,
         "t4": 0,
         "t5": 0,
@@ -113,7 +113,7 @@
         "draws": 300
       },
       "Fibonacci (control)": {
-        "avg_matches": 0.7033333333333334,
+        "avg_matches": 0.7,
         "t3": 3,
         "t4": 0,
         "t5": 0,
@@ -192,14 +192,14 @@
     "type": "lotto",
     "N": 45,
     "tested_draws": 300,
-    "avg_best_matches": 1.7666666666666666,
+    "avg_best_matches": 1.7633333333333334,
     "tier3_draws": 32,
     "tier4_draws": 5,
     "tier5_draws": 0,
     "tier6_draws": 0,
     "per_combo": {
       "Frequency Leaders": {
-        "avg_matches": 0.9,
+        "avg_matches": 0.8966666666666666,
         "t3": 11,
         "t4": 3,
         "t5": 0,
@@ -215,7 +215,7 @@
         "draws": 300
       },
       "Weighted Pick 1": {
-        "avg_matches": 0.7733333333333333,
+        "avg_matches": 0.77,
         "t3": 5,
         "t4": 0,
         "t5": 0,
@@ -223,7 +223,7 @@
         "draws": 300
       },
       "Weighted Pick 2": {
-        "avg_matches": 0.8033333333333333,
+        "avg_matches": 0.7966666666666666,
         "t3": 8,
         "t4": 0,
         "t5": 0,
@@ -239,7 +239,7 @@
         "draws": 300
       },
       "Fibonacci (control)": {
-        "avg_matches": 0.8033333333333333,
+        "avg_matches": 0.8066666666666666,
         "t3": 2,
         "t4": 0,
         "t5": 0,
