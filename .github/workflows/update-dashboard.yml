@@ -5,8 +5,12 @@ name: Update PCSO dashboard
 
 on:
   schedule:
-    # 14:30 UTC = 10:30 PM Manila (UTC+8), after the 9:00 PM draw.
-    # Deliberately off the top of the hour: GitHub's scheduler is most
+    # 01:11 UTC = 9:11 AM Manila (UTC+8): publish tonight's picks while the
+    # 9:00 PM draw is still upcoming, so the numbers are actually playable.
+    - cron: "11 1 * * *"
+    # 14:30 UTC = 10:30 PM Manila (UTC+8): after the 9:00 PM draw, scrape the
+    # result and score the same picks.
+    # Both deliberately off the top of the hour: GitHub's scheduler is most
     # congested at :00, where runs are frequently delayed or dropped.
     - cron: "30 14 * * *"
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
