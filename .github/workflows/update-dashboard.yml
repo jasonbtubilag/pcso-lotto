@@ -5,10 +5,10 @@ name: Update PCSO dashboard
 
 on:
   schedule:
-    # 15:17 UTC = 11:17 PM Manila (UTC+8), after the 9:00 PM draw.
+    # 14:30 UTC = 10:30 PM Manila (UTC+8), after the 9:00 PM draw.
     # Deliberately off the top of the hour: GitHub's scheduler is most
     # congested at :00, where runs are frequently delayed or dropped.
-    - cron: "17 15 * * *"
+    - cron: "30 14 * * *"
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
