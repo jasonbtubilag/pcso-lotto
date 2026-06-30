@@ -216,25 +216,35 @@ def valid(combo, N, smin, smax):
     return True
 
 
-def fib_control(N, k=6):
-    """First k distinct Fibonacci numbers within 1..N.
+PHI_FRAC = (5 ** 0.5 - 1) / 2  # 0.6180339887... = 1/phi, the golden-ratio conjugate
+
+
+def golden_control(N, k=6):
+    """k numbers in 1..N placed by the golden-ratio low-discrepancy sequence:
+    successive multiples of phi's fractional part (0.618...) mapped onto the
+    range. Phi is the "most irrational" number, so this spreads the picks as
+    evenly and non-clustering as mathematically possible.
     A FIXED, deterministic combination — independent of any draw history.
     Included as a negative control: because lotto draws are uniform and
     memoryless, an arbitrary deterministic pattern must converge on the
     hypergeometric baseline (expected matches = 36/N). If it ever beat the
-    statistical strategies over a long backtest, that would be noise, not skill."""
-    fibs, a, b = [], 1, 2
-    while len(fibs) < k and a <= N:
-        if a not in fibs:
-            fibs.append(a)
-        a, b = b, a + b
+    statistical strategies over a long backtest, that would be noise, not skill.
+    Unlike the first-k Fibonacci numbers, this scales with N, so every game
+    gets its own distinct line."""
+    seen = []
+    i = 1
+    while len(seen) < k and i <= 10 * N:  # guard; collisions are rare for PCSO N
+        n = int(((i * PHI_FRAC) % 1.0) * N) + 1
+        if n not in seen:
+            seen.append(n)
+        i += 1
     # pad in the rare case N is tiny (never happens for PCSO games, but be safe)
     n = 1
-    while len(fibs) < k:
-        if n not in fibs:
-            fibs.append(n)
+    while len(seen) < k:
+        if n not in seen:
+            seen.append(n)
         n += 1
-    return sorted(fibs[:k])
+    return sorted(seen[:k])
 
 
 def predict(game, history):
@@ -293,19 +303,15 @@ def predict(game, history):
         "Weighted Pick 1": weighted[0],
         "Weighted Pick 2": weighted[1],
         "Weighted Pick 3": weighted[2],
-        "Fibonacci (control)": fib_control(N),
+        "Golden Ratio (control)": golden_control(N),
     }
 
 
-def fib_digit_control(P):
-    """Fixed Fibonacci digit string for a P-position digit game: 1,1,2,3,5,8,...
-    taken mod 10 so every term is a valid 0-9 digit. Deterministic — the digit-game
-    analogue of fib_control(), included as a negative control."""
-    seq, a, b = [], 1, 1
-    for _ in range(P):
-        seq.append(a % 10)
-        a, b = b, a + b
-    return seq
+def golden_digit_control(P):
+    """Fixed golden-ratio digit string for a P-position digit game: the i-th
+    digit is floor(frac(i * 0.618...) * 10), a 0-9 digit. Deterministic — the
+    digit-game analogue of golden_control(), included as a negative control."""
+    return [int(((i * PHI_FRAC) % 1.0) * 10) for i in range(1, P + 1)]
 
 
 def predict_digit(game, history):
@@ -352,7 +358,7 @@ def predict_digit(game, history):
         "Weighted Pick 1": weighted[0],
         "Weighted Pick 2": weighted[1],
         "Weighted Pick 3": weighted[2],
-        "Fibonacci (control)": fib_digit_control(P),
+        "Golden Ratio (control)": golden_digit_control(P),
     }
 
 
@@ -759,7 +765,7 @@ def render_trackrecord(log, back):
     backtest_html = (
         '<h3 style="margin-top:18px;">📊 Backtest — strategy vs. random baseline</h3>'
         '<div class="psub">Each past draw was predicted using only the data available before it '
-        '(6 combos / draw, including the Fibonacci control), then scored. "Random baseline" is the '
+        '(6 combos / draw, including the golden-ratio control), then scored. "Random baseline" is the '
         'mathematical expectation of random tickets.</div>'
         + lotto_table + digit_table)
 
