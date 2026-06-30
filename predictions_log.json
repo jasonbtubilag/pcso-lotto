@@ -270,6 +270,63 @@
           "kind": "up to"
         }
       }
+    },
+    {
+      "draw_date": "2026-06-30",
+      "generated": "2026-06-30T05:14:48",
+      "history_size": 1503,
+      "combos": {
+        "Frequency Leaders": [
+          2,
+          6,
+          14,
+          19,
+          22,
+          45
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          6,
+          14,
+          19,
+          34,
+          49
+        ],
+        "Weighted Pick 1": [
+          17,
+          19,
+          22,
+          38,
+          47,
+          51
+        ],
+        "Weighted Pick 2": [
+          3,
+          26,
+          32,
+          43,
+          44,
+          58
+        ],
+        "Weighted Pick 3": [
+          3,
+          23,
+          30,
+          44,
+          47,
+          52
+        ],
+        "Fibonacci (control)": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Super Lotto 6/49": [
@@ -537,6 +594,63 @@
       },
       "jackpot": "42,703,181.17",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-06-30",
+      "generated": "2026-06-30T05:14:49",
+      "history_size": 1562,
+      "combos": {
+        "Frequency Leaders": [
+          3,
+          16,
+          19,
+          29,
+          30,
+          41
+        ],
+        "Hot + Overdue Balance": [
+          3,
+          19,
+          29,
+          30,
+          34,
+          45
+        ],
+        "Weighted Pick 1": [
+          2,
+          20,
+          23,
+          25,
+          38,
+          41
+        ],
+        "Weighted Pick 2": [
+          6,
+          20,
+          26,
+          33,
+          35,
+          37
+        ],
+        "Weighted Pick 3": [
+          8,
+          19,
+          21,
+          34,
+          36,
+          45
+        ],
+        "Fibonacci (control)": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Grand Lotto 6/55": [
@@ -1283,6 +1397,63 @@
       },
       "jackpot": "45,493,326.06",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-06-30",
+      "generated": "2026-06-30T05:14:49",
+      "history_size": 1562,
+      "combos": {
+        "Frequency Leaders": [
+          5,
+          12,
+          18,
+          31,
+          36,
+          41
+        ],
+        "Hot + Overdue Balance": [
+          4,
+          9,
+          18,
+          19,
+          31,
+          41
+        ],
+        "Weighted Pick 1": [
+          9,
+          12,
+          17,
+          23,
+          31,
+          42
+        ],
+        "Weighted Pick 2": [
+          7,
+          10,
+          27,
+          32,
+          38,
+          41
+        ],
+        "Weighted Pick 3": [
+          8,
+          9,
+          20,
+          28,
+          29,
+          33
+        ],
+        "Fibonacci (control)": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          13
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "6D Lotto": [
@@ -1358,6 +1529,63 @@
       },
       "jackpot": "5,404,454.28",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-06-30",
+      "generated": "2026-06-30T05:14:49",
+      "history_size": 1496,
+      "combos": {
+        "Frequency Leaders": [
+          2,
+          9,
+          9,
+          4,
+          1,
+          2
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          6,
+          9,
+          8,
+          1,
+          8
+        ],
+        "Weighted Pick 1": [
+          3,
+          8,
+          0,
+          7,
+          8,
+          5
+        ],
+        "Weighted Pick 2": [
+          9,
+          5,
+          6,
+          6,
+          3,
+          2
+        ],
+        "Weighted Pick 3": [
+          2,
+          9,
+          6,
+          2,
+          9,
+          4
+        ],
+        "Fibonacci (control)": [
+          1,
+          1,
+          2,
+          3,
+          5,
+          8
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "4D Lotto": [
