@@ -3,9 +3,9 @@
     "type": "lotto",
     "N": 58,
     "tested_draws": 300,
-    "avg_best_matches": 1.4733333333333334,
-    "tier3_draws": 15,
-    "tier4_draws": 1,
+    "avg_best_matches": 1.47,
+    "tier3_draws": 18,
+    "tier4_draws": 0,
     "tier5_draws": 0,
     "tier6_draws": 0,
     "per_combo": {
@@ -49,10 +49,10 @@
         "t6": 0,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.61,
-        "t3": 2,
-        "t4": 1,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.6633333333333333,
+        "t3": 5,
+        "t4": 0,
         "t5": 0,
         "t6": 0,
         "draws": 300
@@ -66,7 +66,7 @@
     "type": "lotto",
     "N": 55,
     "tested_draws": 300,
-    "avg_best_matches": 1.57,
+    "avg_best_matches": 1.5633333333333332,
     "tier3_draws": 22,
     "tier4_draws": 1,
     "tier5_draws": 0,
@@ -112,8 +112,8 @@
         "t6": 0,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.7,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.6266666666666667,
         "t3": 3,
         "t4": 0,
         "t5": 0,
@@ -129,7 +129,7 @@
     "type": "lotto",
     "N": 49,
     "tested_draws": 300,
-    "avg_best_matches": 1.6733333333333333,
+    "avg_best_matches": 1.68,
     "tier3_draws": 26,
     "tier4_draws": 2,
     "tier5_draws": 0,
@@ -175,8 +175,8 @@
         "t6": 0,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.7333333333333333,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.7433333333333333,
         "t3": 5,
         "t4": 0,
         "t5": 0,
@@ -192,7 +192,7 @@
     "type": "lotto",
     "N": 45,
     "tested_draws": 300,
-    "avg_best_matches": 1.7633333333333334,
+    "avg_best_matches": 1.7233333333333334,
     "tier3_draws": 32,
     "tier4_draws": 5,
     "tier5_draws": 0,
@@ -238,9 +238,9 @@
         "t6": 0,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.8066666666666666,
-        "t3": 2,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.7133333333333334,
+        "t3": 3,
         "t4": 0,
         "t5": 0,
         "t6": 0,
@@ -255,8 +255,8 @@
     "type": "lotto",
     "N": 42,
     "tested_draws": 300,
-    "avg_best_matches": 1.86,
-    "tier3_draws": 51,
+    "avg_best_matches": 1.8933333333333333,
+    "tier3_draws": 56,
     "tier4_draws": 5,
     "tier5_draws": 0,
     "tier6_draws": 0,
@@ -301,9 +301,9 @@
         "t6": 0,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.8133333333333334,
-        "t3": 8,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.82,
+        "t3": 11,
         "t4": 0,
         "t5": 0,
         "t6": 0,
@@ -318,12 +318,12 @@
     "type": "digit",
     "positions": 4,
     "tested_draws": 300,
-    "avg_best_matches": 1.18,
+    "avg_best_matches": 1.1933333333333334,
     "baseline_avg_matches_per_combo": 0.4,
     "tier_draws": {
-      "2": 20,
+      "2": 19,
       "3": 1,
-      "4": 0
+      "4": 1
     },
     "per_combo": {
       "Frequency Leaders": {
@@ -346,8 +346,8 @@
         "avg_matches": 0.3233333333333333,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.38666666666666666,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.4,
         "draws": 300
       }
     }
@@ -356,10 +356,10 @@
     "type": "digit",
     "positions": 6,
     "tested_draws": 300,
-    "avg_best_matches": 1.5766666666666667,
+    "avg_best_matches": 1.5933333333333333,
     "baseline_avg_matches_per_combo": 0.6,
     "tier_draws": {
-      "2": 30,
+      "2": 33,
       "3": 4,
       "4": 2,
       "5": 1,
@@ -386,8 +386,8 @@
         "avg_matches": 0.5966666666666667,
         "draws": 300
       },
-      "Fibonacci (control)": {
-        "avg_matches": 0.5533333333333333,
+      "Golden Ratio (control)": {
+        "avg_matches": 0.6033333333333334,
         "draws": 300
       }
     }
