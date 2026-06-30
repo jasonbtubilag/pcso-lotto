@@ -273,7 +273,7 @@
     },
     {
       "draw_date": "2026-06-30",
-      "generated": "2026-06-30T05:14:48",
+      "generated": "2026-06-30T13:57:45",
       "history_size": 1503,
       "combos": {
         "Frequency Leaders": [
@@ -316,13 +316,13 @@
           47,
           52
         ],
-        "Fibonacci (control)": [
-          1,
-          2,
-          3,
-          5,
-          8,
-          13
+        "Golden Ratio (control)": [
+          6,
+          14,
+          28,
+          36,
+          42,
+          50
         ]
       },
       "actual": null,
@@ -597,7 +597,7 @@
     },
     {
       "draw_date": "2026-06-30",
-      "generated": "2026-06-30T05:14:49",
+      "generated": "2026-06-30T13:57:45",
       "history_size": 1562,
       "combos": {
         "Frequency Leaders": [
@@ -640,13 +640,13 @@
           36,
           45
         ],
-        "Fibonacci (control)": [
-          1,
-          2,
-          3,
+        "Golden Ratio (control)": [
           5,
-          8,
-          13
+          12,
+          24,
+          31,
+          35,
+          42
         ]
       },
       "actual": null,
@@ -1400,7 +1400,7 @@
     },
     {
       "draw_date": "2026-06-30",
-      "generated": "2026-06-30T05:14:49",
+      "generated": "2026-06-30T13:57:45",
       "history_size": 1562,
       "combos": {
         "Frequency Leaders": [
@@ -1443,13 +1443,13 @@
           29,
           33
         ],
-        "Fibonacci (control)": [
-          1,
-          2,
-          3,
-          5,
-          8,
-          13
+        "Golden Ratio (control)": [
+          4,
+          10,
+          20,
+          26,
+          30,
+          36
         ]
       },
       "actual": null,
@@ -1532,7 +1532,7 @@
     },
     {
       "draw_date": "2026-06-30",
-      "generated": "2026-06-30T05:14:49",
+      "generated": "2026-06-30T13:57:45",
       "history_size": 1496,
       "combos": {
         "Frequency Leaders": [
@@ -1575,13 +1575,13 @@
           9,
           4
         ],
-        "Fibonacci (control)": [
-          1,
-          1,
+        "Golden Ratio (control)": [
+          6,
           2,
-          3,
-          5,
-          8
+          8,
+          4,
+          0,
+          7
         ]
       },
       "actual": null,
