@@ -21,6 +21,18 @@ Usage:
     python pcso_predict.py 2026-06-21 # force a specific date (testing)
 """
 import csv, json, os, sys, math, random, collections, datetime, re
+try:
+    from zoneinfo import ZoneInfo
+    MANILA_TZ = ZoneInfo("Asia/Manila")
+except Exception:  # pragma: no cover - fallback if tzdata is unavailable
+    MANILA_TZ = datetime.timezone(datetime.timedelta(hours=8))  # PHT is UTC+8, no DST
+
+
+def manila_today():
+    """Today's date in Manila (PCSO draw timezone), independent of the host
+    clock — GitHub Actions runners are UTC, so date.today() there can be a day
+    behind the actual Manila draw date for early-morning Manila runs."""
+    return datetime.datetime.now(MANILA_TZ).date().isoformat()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CSV  = os.path.join(HERE, "pcso_lotto_results.csv")
@@ -836,7 +848,7 @@ def inject_html(predict_html, track_html):
 
 
 def main():
-    today = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().isoformat()
+    today = sys.argv[1] if len(sys.argv) > 1 else manila_today()
     rows = load_draws()
     log, todays_games = run_predictions(rows, today)
     back = backtest(rows)
