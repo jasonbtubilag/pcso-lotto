@@ -126,11 +126,15 @@ MIRROR_SLUG = {
     "Super Lotto 6/49": "6-49",
     "Mega Lotto 6/45":  "6-45",
     "Lotto 6/42":       "6-42",
+    "4D Lotto":         "4d",
+    "6D Lotto":         "6d",
 }
-GAME_MAX = {  # highest valid ball number per game (sanity check)
+GAME_MAX = {  # highest valid ball number per 6/N game (sanity check)
     "Ultra Lotto 6/58": 58, "Grand Lotto 6/55": 55, "Super Lotto 6/49": 49,
     "Mega Lotto 6/45": 45, "Lotto 6/42": 42,
 }
+# Positional-digit games: P digits, each 0-9, order matters, repeats allowed.
+DIGIT_POS = {"4D Lotto": 4, "6D Lotto": 6}
 
 
 def _mirror_url(game, d):
@@ -158,9 +162,15 @@ def parse_mirror_html(html, game, d):
     import re
     try:
         text = BeautifulSoup(html, "html.parser").get_text("\n")
-        hi = GAME_MAX[game]
         long_date = f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
-        num_re = re.compile(r"\b(\d{1,2}-\d{1,2}-\d{1,2}-\d{1,2}-\d{1,2}-\d{1,2})\b")
+        is_digit = game in DIGIT_POS
+        if is_digit:
+            P = DIGIT_POS[game]
+            # P single digits, dash-separated (e.g. "0-4-1-3" / "5-8-2-8-1-6").
+            num_re = re.compile(r"\b(\d(?:-\d){%d})\b" % (P - 1))
+        else:
+            hi = GAME_MAX[game]
+            num_re = re.compile(r"\b(\d{1,2}(?:-\d{1,2}){5})\b")
 
         for mt in re.finditer(re.escape(long_date), text):
             seg = text[mt.end(): mt.end() + 250]
@@ -170,14 +180,20 @@ def parse_mirror_html(html, game, d):
             nm = num_re.search(seg[:jpos])   # numbers must appear before "Jackpot"
             if not nm:               # blank cell -> result not posted yet
                 continue
-            nums = [int(x) for x in nm.group(1).split("-")]
-            if len(set(nums)) != 6 or any(n < 1 or n > hi for n in nums):
-                continue
-            combo = "-".join(f"{n:02d}" for n in nums)
+            parts = [int(x) for x in nm.group(1).split("-")]
+            if is_digit:
+                # digits repeat freely; only validate count and 0-9 range.
+                if len(parts) != P or any(n < 0 or n > 9 for n in parts):
+                    continue
+                combo = "-".join(str(n) for n in parts)
+            else:
+                if len(set(parts)) != 6 or any(n < 1 or n > hi for n in parts):
+                    continue
+                combo = "-".join(f"{n:02d}" for n in parts)
 
             jm = re.search(r"₱\s*([\d,]+\.\d{2})", seg[jpos:])
             jackpot = jm.group(1) if jm else ""
-            wm = re.search(r"Jackpot Winner\(s\)[\s\S]{0,40}?(\d+)", text)
+            wm = re.search(r"Jackpot Winner\(s\)[\s\S]{0,40}?(\d+)", seg[jpos:])
             winners = wm.group(1) if wm else "0"
 
             return {
@@ -372,15 +388,21 @@ def main():
     # source, try the philnews mirror so same-day results appear right after the
     # 9 PM draw instead of waiting for PCSO to update its search page.
     have_gd = {(r["game"], r["date"]) for r in existing}
-    have_combo = {(r["game"], r["combination"]) for r in existing}  # stale guard
+    # Stale-scrape guard: a mis-parse grabs a game's *previous* posted result —
+    # i.e. that game's most recent draw already on file. Compare only against
+    # that latest combo (not all history) so legitimate repeats — common for the
+    # 4D game's 10,000-combo space — are still accepted.
+    latest_combo = {}
+    for r in sorted(existing, key=lambda x: x["date"]):
+        latest_combo[r["game"]] = r["combination"]
     mirror_added = 0
     if existing:  # only run the mirror in incremental mode, not on first build
         for game, d in recent_missing_draws(existing):
             rec = mirror_fetch(session, game, d)
-            # Reject a repeated combination for the same game: an exact 6-number
-            # repeat virtually never happens, so it means we scraped a stale
-            # "previous result" instead of the (not-yet-posted) current one.
-            if rec and (rec["game"], rec["combination"]) in have_combo:
+            # If the combo equals this game's most recent stored draw, we almost
+            # certainly grabbed the stale "previous result" rather than the
+            # (not-yet-posted) current one, so skip it.
+            if rec and rec["combination"] == latest_combo.get(rec["game"]):
                 print(f"  ! mirror skipped (stale/duplicate combo): "
                       f"{rec['game']} {rec['date']} {rec['combination']}",
                       flush=True)
@@ -389,7 +411,7 @@ def main():
                 if key(rec) not in seen:
                     seen.add(key(rec))
                     have_gd.add((rec["game"], rec["date"]))
-                    have_combo.add((rec["game"], rec["combination"]))
+                    latest_combo[rec["game"]] = rec["combination"]
                     existing.append(rec)
                     added += 1
                     mirror_added += 1
