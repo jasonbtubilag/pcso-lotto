@@ -159,7 +159,7 @@ const DAYSHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const colors = {'Ultra Lotto 6/58':'#a855f7','Grand Lotto 6/55':'#ef4444','Super Lotto 6/49':'#3b82f6','Mega Lotto 6/45':'#10b981','Lotto 6/42':'#f59e0b','4D Lotto':'#14b8a6','6D Lotto':'#ec4899'};
 function num(s){return parseFloat(String(s).replace(/[^0-9.]/g,''))||0;}
 let DATA = RAW.map(r=>({...r, jackpotNum:num(r.jackpot), winnersNum:parseInt(r.winners)||0}));
-document.getElementById('gen').textContent = "2026-07-03T16:03:07";
+document.getElementById('gen').textContent = "2026-07-03T22:15:08";
 
 // ===== Today's Draws =====
 (function renderToday(){
