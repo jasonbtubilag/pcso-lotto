@@ -398,8 +398,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        15,
+        25,
+        54,
+        27,
+        8,
+        56
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 2,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "128,000,000.00",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -1563,8 +1579,24 @@
           39
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        43,
+        2,
+        13,
+        5,
+        36,
+        1
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 2,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "97,966,977.93",
+      "prizes": {}
     }
   ],
   "Lotto 6/42": [
@@ -2304,8 +2336,22 @@
           4
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        9,
+        0,
+        0,
+        5
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "10,000.00",
+      "prizes": {}
     }
   ]
 }
