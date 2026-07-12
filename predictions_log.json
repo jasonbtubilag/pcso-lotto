@@ -696,8 +696,30 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        18,
+        4,
+        11,
+        34,
+        43,
+        38
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 4,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "128,000,000.00",
+      "prizes": {
+        "Weighted Pick 1": {
+          "matches": 4,
+          "amount": 3800,
+          "kind": "up to"
+        }
+      }
     }
   ],
   "Super Lotto 6/49": [
@@ -1391,8 +1413,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        17,
+        47,
+        49,
+        46,
+        35,
+        32
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "66,952,378.35",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
