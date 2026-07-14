@@ -775,8 +775,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        1,
+        23,
+        17,
+        48,
+        58,
+        34
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "132,124,267.28",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -1543,8 +1559,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        18,
+        11,
+        37,
+        22,
+        36,
+        17
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "70,248,761.21",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -3671,8 +3703,24 @@
           36
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        21,
+        27,
+        38,
+        6,
+        18,
+        35
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "13,973,560.81",
+      "prizes": {}
     }
   ],
   "6D Lotto": [
@@ -4241,8 +4289,30 @@
           7
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        9,
+        9,
+        3,
+        2,
+        5,
+        4
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "651,876.56",
+      "prizes": {
+        "Weighted Pick 1": {
+          "matches": 2,
+          "amount": 40,
+          "kind": "fixed"
+        }
+      }
     }
   ],
   "4D Lotto": [
