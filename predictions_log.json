@@ -1632,8 +1632,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        5,
+        34,
+        18,
+        26,
+        23,
+        9
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "74,564,647.92",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -3985,8 +4001,24 @@
           36
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        2,
+        13,
+        25,
+        6,
+        30,
+        42
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "16,967,295.47",
+      "prizes": {}
     }
   ],
   "6D Lotto": [
@@ -4634,8 +4666,24 @@
           7
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        3,
+        5,
+        8,
+        7,
+        6,
+        5
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "1,249,271.00",
+      "prizes": {}
     }
   ],
   "4D Lotto": [
