@@ -73,7 +73,7 @@
     "tier6_draws": 0,
     "per_combo": {
       "Frequency Leaders": {
-        "avg_matches": 0.61,
+        "avg_matches": 0.6166666666666667,
         "t3": 4,
         "t4": 0,
         "t5": 0,
@@ -89,7 +89,7 @@
         "draws": 300
       },
       "Weighted Pick 1": {
-        "avg_matches": 0.62,
+        "avg_matches": 0.6133333333333333,
         "t3": 7,
         "t4": 1,
         "t5": 0,
@@ -105,7 +105,7 @@
         "draws": 300
       },
       "Weighted Pick 3": {
-        "avg_matches": 0.62,
+        "avg_matches": 0.6266666666666667,
         "t3": 2,
         "t4": 0,
         "t5": 0,
@@ -113,7 +113,7 @@
         "draws": 300
       },
       "Golden Ratio (control)": {
-        "avg_matches": 0.6233333333333333,
+        "avg_matches": 0.62,
         "t3": 3,
         "t4": 0,
         "t5": 0,
@@ -199,7 +199,7 @@
     "tier6_draws": 0,
     "per_combo": {
       "Frequency Leaders": {
-        "avg_matches": 0.9066666666666666,
+        "avg_matches": 0.9,
         "t3": 11,
         "t4": 3,
         "t5": 0,
@@ -215,7 +215,7 @@
         "draws": 300
       },
       "Weighted Pick 1": {
-        "avg_matches": 0.77,
+        "avg_matches": 0.7733333333333333,
         "t3": 4,
         "t4": 0,
         "t5": 0,
@@ -239,7 +239,7 @@
         "draws": 300
       },
       "Golden Ratio (control)": {
-        "avg_matches": 0.7266666666666667,
+        "avg_matches": 0.7333333333333333,
         "t3": 4,
         "t4": 0,
         "t5": 0,
@@ -318,7 +318,7 @@
     "type": "digit",
     "positions": 4,
     "tested_draws": 300,
-    "avg_best_matches": 1.1766666666666667,
+    "avg_best_matches": 1.18,
     "baseline_avg_matches_per_combo": 0.4,
     "tier_draws": {
       "2": 20,
@@ -335,7 +335,7 @@
         "draws": 300
       },
       "Weighted Pick 1": {
-        "avg_matches": 0.3933333333333333,
+        "avg_matches": 0.39,
         "draws": 300
       },
       "Weighted Pick 2": {
@@ -343,11 +343,11 @@
         "draws": 300
       },
       "Weighted Pick 3": {
-        "avg_matches": 0.31666666666666665,
+        "avg_matches": 0.32,
         "draws": 300
       },
       "Golden Ratio (control)": {
-        "avg_matches": 0.38333333333333336,
+        "avg_matches": 0.38666666666666666,
         "draws": 300
       }
     }
