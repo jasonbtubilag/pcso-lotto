@@ -4767,8 +4767,30 @@
           47
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        26,
+        5,
+        13,
+        38,
+        6,
+        9
+      ],
+      "scores": {
+        "Frequency Leaders": 2,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 2,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 3
+      },
+      "jackpot": "124,014,115.01",
+      "prizes": {
+        "Golden Ratio (control)": {
+          "matches": 3,
+          "amount": 20,
+          "kind": "fixed"
+        }
+      }
     }
   ],
   "Mega Lotto 6/45": [
@@ -6349,8 +6371,24 @@
           39
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        39,
+        27,
+        37,
+        19,
+        23,
+        5
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 2
+      },
+      "jackpot": "15,000,000.00",
+      "prizes": {}
     }
   ],
   "Lotto 6/42": [
@@ -10412,8 +10450,22 @@
           4
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        4,
+        4,
+        8,
+        1
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "10,000.00",
+      "prizes": {}
     }
   ]
 }
