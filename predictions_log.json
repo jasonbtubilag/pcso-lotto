@@ -1651,8 +1651,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        43,
+        6,
+        39,
+        41,
+        53,
+        57
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 2,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "199,976,621.54",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -3295,8 +3311,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        18,
+        45,
+        40,
+        5,
+        13,
+        23
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 2,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "25,107,811.30",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -8087,8 +8119,24 @@
           36
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        36,
+        15,
+        1,
+        6,
+        7,
+        13
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "25,255,016.45",
+      "prizes": {}
     }
   ],
   "6D Lotto": [
@@ -9545,8 +9593,24 @@
           7
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        6,
+        5,
+        3,
+        9,
+        5,
+        3
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 1
+      },
+      "jackpot": "5,358,461.68",
+      "prizes": {}
     }
   ],
   "4D Lotto": [
