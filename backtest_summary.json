@@ -113,7 +113,7 @@
         "draws": 300
       },
       "Golden Ratio (control)": {
-        "avg_matches": 0.6266666666666667,
+        "avg_matches": 0.6233333333333333,
         "t3": 5,
         "t4": 1,
         "t5": 0,
@@ -192,14 +192,14 @@
     "type": "lotto",
     "N": 45,
     "tested_draws": 300,
-    "avg_best_matches": 1.7366666666666666,
+    "avg_best_matches": 1.74,
     "tier3_draws": 34,
     "tier4_draws": 5,
     "tier5_draws": 0,
     "tier6_draws": 0,
     "per_combo": {
       "Frequency Leaders": {
-        "avg_matches": 0.88,
+        "avg_matches": 0.8833333333333333,
         "t3": 11,
         "t4": 3,
         "t5": 0,
@@ -223,7 +223,7 @@
         "draws": 300
       },
       "Weighted Pick 2": {
-        "avg_matches": 0.7766666666666666,
+        "avg_matches": 0.78,
         "t3": 8,
         "t4": 0,
         "t5": 0,
@@ -231,7 +231,7 @@
         "draws": 300
       },
       "Weighted Pick 3": {
-        "avg_matches": 0.7866666666666666,
+        "avg_matches": 0.7833333333333333,
         "t3": 4,
         "t4": 0,
         "t5": 0,
@@ -331,7 +331,7 @@
         "draws": 300
       },
       "Hot + Overdue Balance": {
-        "avg_matches": 0.4,
+        "avg_matches": 0.4033333333333333,
         "draws": 300
       },
       "Weighted Pick 1": {
@@ -343,11 +343,11 @@
         "draws": 300
       },
       "Weighted Pick 3": {
-        "avg_matches": 0.34,
+        "avg_matches": 0.3333333333333333,
         "draws": 300
       },
       "Golden Ratio (control)": {
-        "avg_matches": 0.41333333333333333,
+        "avg_matches": 0.42,
         "draws": 300
       }
     }
