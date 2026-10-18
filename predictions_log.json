@@ -3768,8 +3768,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        54,
+        19,
+        52,
+        35,
+        17,
+        24
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "410,973,545.48",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -7541,8 +7557,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        37,
+        36,
+        20,
+        23,
+        48,
+        26
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "54,626,649.78",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -11298,6 +11330,63 @@
       },
       "jackpot": "277,990,409.51",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-10-19",
+      "generated": "2026-10-18T17:26:38",
+      "history_size": 1617,
+      "combos": {
+        "Frequency Leaders": [
+          9,
+          20,
+          33,
+          42,
+          52,
+          54
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          20,
+          24,
+          33,
+          42,
+          45
+        ],
+        "Weighted Pick 1": [
+          2,
+          18,
+          39,
+          41,
+          47,
+          54
+        ],
+        "Weighted Pick 2": [
+          17,
+          27,
+          29,
+          32,
+          48,
+          50
+        ],
+        "Weighted Pick 3": [
+          2,
+          11,
+          16,
+          33,
+          39,
+          49
+        ],
+        "Golden Ratio (control)": [
+          5,
+          13,
+          26,
+          34,
+          39,
+          47
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Mega Lotto 6/45": [
@@ -15054,6 +15143,63 @@
       },
       "jackpot": "110,527,091.63",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-10-19",
+      "generated": "2026-10-18T17:26:38",
+      "history_size": 1616,
+      "combos": {
+        "Frequency Leaders": [
+          3,
+          4,
+          25,
+          38,
+          42,
+          43
+        ],
+        "Hot + Overdue Balance": [
+          4,
+          18,
+          25,
+          34,
+          42,
+          43
+        ],
+        "Weighted Pick 1": [
+          4,
+          21,
+          22,
+          27,
+          30,
+          33
+        ],
+        "Weighted Pick 2": [
+          7,
+          10,
+          23,
+          33,
+          38,
+          39
+        ],
+        "Weighted Pick 3": [
+          11,
+          14,
+          24,
+          28,
+          31,
+          35
+        ],
+        "Golden Ratio (control)": [
+          5,
+          11,
+          22,
+          28,
+          32,
+          39
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Lotto 6/42": [
@@ -25299,6 +25445,51 @@
       },
       "jackpot": "",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-10-19",
+      "generated": "2026-10-18T17:26:38",
+      "history_size": 1552,
+      "combos": {
+        "Frequency Leaders": [
+          0,
+          5,
+          0,
+          7
+        ],
+        "Hot + Overdue Balance": [
+          0,
+          4,
+          0,
+          8
+        ],
+        "Weighted Pick 1": [
+          9,
+          3,
+          6,
+          8
+        ],
+        "Weighted Pick 2": [
+          2,
+          4,
+          3,
+          0
+        ],
+        "Weighted Pick 3": [
+          3,
+          8,
+          7,
+          5
+        ],
+        "Golden Ratio (control)": [
+          6,
+          2,
+          8,
+          4
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ]
 }
