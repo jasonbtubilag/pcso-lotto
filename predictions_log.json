@@ -4279,8 +4279,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        16,
+        55,
+        1,
+        6,
+        27,
+        14
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 2,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 2
+      },
+      "jackpot": "478,298,684.14",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -8569,8 +8585,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        22,
+        8,
+        19,
+        36,
+        20,
+        44
+      ],
+      "scores": {
+        "Frequency Leaders": 1,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 1,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "82,569,686.42",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -12837,6 +12869,63 @@
       },
       "jackpot": "326,053,355.61",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-11-04",
+      "generated": "2026-11-03T20:32:41",
+      "history_size": 1624,
+      "combos": {
+        "Frequency Leaders": [
+          9,
+          20,
+          33,
+          42,
+          52,
+          54
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          3,
+          20,
+          24,
+          33,
+          42
+        ],
+        "Weighted Pick 1": [
+          5,
+          15,
+          30,
+          33,
+          34,
+          36
+        ],
+        "Weighted Pick 2": [
+          6,
+          11,
+          32,
+          37,
+          46,
+          55
+        ],
+        "Weighted Pick 3": [
+          9,
+          15,
+          24,
+          30,
+          49,
+          55
+        ],
+        "Golden Ratio (control)": [
+          5,
+          13,
+          26,
+          34,
+          39,
+          47
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Mega Lotto 6/45": [
@@ -17110,6 +17199,63 @@
       },
       "jackpot": "15,000,000.00",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-11-04",
+      "generated": "2026-11-03T20:32:41",
+      "history_size": 1623,
+      "combos": {
+        "Frequency Leaders": [
+          3,
+          4,
+          25,
+          38,
+          42,
+          43
+        ],
+        "Hot + Overdue Balance": [
+          3,
+          4,
+          25,
+          33,
+          42,
+          43
+        ],
+        "Weighted Pick 1": [
+          5,
+          11,
+          30,
+          35,
+          37,
+          42
+        ],
+        "Weighted Pick 2": [
+          8,
+          16,
+          17,
+          35,
+          37,
+          42
+        ],
+        "Weighted Pick 3": [
+          8,
+          9,
+          13,
+          25,
+          32,
+          41
+        ],
+        "Golden Ratio (control)": [
+          5,
+          11,
+          22,
+          28,
+          32,
+          39
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Lotto 6/42": [
@@ -21375,8 +21521,24 @@
           36
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        35,
+        41,
+        8,
+        28,
+        19,
+        27
+      ],
+      "scores": {
+        "Frequency Leaders": 2,
+        "Hot + Overdue Balance": 1,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "10,000,000.00",
+      "prizes": {}
     }
   ],
   "6D Lotto": [
@@ -25502,8 +25664,24 @@
           7
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        8,
+        7,
+        3,
+        2,
+        8,
+        9
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 0,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "4,493,951.00",
+      "prizes": {}
     }
   ],
   "4D Lotto": [
@@ -28781,6 +28959,51 @@
       },
       "jackpot": "",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-11-04",
+      "generated": "2026-11-03T20:32:41",
+      "history_size": 1559,
+      "combos": {
+        "Frequency Leaders": [
+          0,
+          5,
+          0,
+          7
+        ],
+        "Hot + Overdue Balance": [
+          0,
+          4,
+          0,
+          8
+        ],
+        "Weighted Pick 1": [
+          2,
+          9,
+          6,
+          6
+        ],
+        "Weighted Pick 2": [
+          0,
+          3,
+          7,
+          9
+        ],
+        "Weighted Pick 3": [
+          2,
+          4,
+          5,
+          7
+        ],
+        "Golden Ratio (control)": [
+          6,
+          2,
+          8,
+          4
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ]
 }
