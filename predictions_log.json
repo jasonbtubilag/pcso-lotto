@@ -4425,8 +4425,24 @@
           50
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        22,
+        14,
+        1,
+        42,
+        9,
+        8
+      ],
+      "scores": {
+        "Frequency Leaders": 2,
+        "Hot + Overdue Balance": 2,
+        "Weighted Pick 1": 0,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 1,
+        "Golden Ratio (control)": 2
+      },
+      "jackpot": "",
+      "prizes": {}
     }
   ],
   "Super Lotto 6/49": [
@@ -8861,8 +8877,24 @@
           42
         ]
       },
-      "actual": null,
-      "scores": null
+      "actual": [
+        34,
+        39,
+        38,
+        18,
+        47,
+        36
+      ],
+      "scores": {
+        "Frequency Leaders": 0,
+        "Hot + Overdue Balance": 0,
+        "Weighted Pick 1": 2,
+        "Weighted Pick 2": 1,
+        "Weighted Pick 3": 0,
+        "Golden Ratio (control)": 0
+      },
+      "jackpot": "",
+      "prizes": {}
     }
   ],
   "Grand Lotto 6/55": [
@@ -13281,6 +13313,63 @@
           "kind": "fixed"
         }
       }
+    },
+    {
+      "draw_date": "2026-11-09",
+      "generated": "2026-11-08T18:54:35",
+      "history_size": 1626,
+      "combos": {
+        "Frequency Leaders": [
+          9,
+          20,
+          33,
+          42,
+          52,
+          54
+        ],
+        "Hot + Overdue Balance": [
+          2,
+          3,
+          20,
+          24,
+          42,
+          54
+        ],
+        "Weighted Pick 1": [
+          5,
+          12,
+          20,
+          33,
+          35,
+          50
+        ],
+        "Weighted Pick 2": [
+          5,
+          17,
+          29,
+          30,
+          36,
+          41
+        ],
+        "Weighted Pick 3": [
+          9,
+          12,
+          25,
+          31,
+          38,
+          46
+        ],
+        "Golden Ratio (control)": [
+          5,
+          13,
+          26,
+          34,
+          39,
+          47
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Mega Lotto 6/45": [
@@ -17706,6 +17795,63 @@
       },
       "jackpot": "15,000,000.00",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-11-09",
+      "generated": "2026-11-08T18:54:35",
+      "history_size": 1625,
+      "combos": {
+        "Frequency Leaders": [
+          3,
+          4,
+          25,
+          38,
+          42,
+          43
+        ],
+        "Hot + Overdue Balance": [
+          4,
+          23,
+          25,
+          33,
+          42,
+          43
+        ],
+        "Weighted Pick 1": [
+          1,
+          8,
+          9,
+          24,
+          31,
+          40
+        ],
+        "Weighted Pick 2": [
+          15,
+          16,
+          18,
+          22,
+          31,
+          43
+        ],
+        "Weighted Pick 3": [
+          7,
+          16,
+          19,
+          24,
+          26,
+          34
+        ],
+        "Golden Ratio (control)": [
+          5,
+          11,
+          22,
+          28,
+          32,
+          39
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ],
   "Lotto 6/42": [
@@ -29836,6 +29982,51 @@
       },
       "jackpot": "",
       "prizes": {}
+    },
+    {
+      "draw_date": "2026-11-09",
+      "generated": "2026-11-08T18:54:35",
+      "history_size": 1561,
+      "combos": {
+        "Frequency Leaders": [
+          0,
+          5,
+          0,
+          7
+        ],
+        "Hot + Overdue Balance": [
+          0,
+          4,
+          0,
+          8
+        ],
+        "Weighted Pick 1": [
+          8,
+          2,
+          2,
+          1
+        ],
+        "Weighted Pick 2": [
+          3,
+          2,
+          6,
+          7
+        ],
+        "Weighted Pick 3": [
+          6,
+          4,
+          6,
+          2
+        ],
+        "Golden Ratio (control)": [
+          6,
+          2,
+          8,
+          4
+        ]
+      },
+      "actual": null,
+      "scores": null
     }
   ]
 }
